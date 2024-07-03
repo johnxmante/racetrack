@@ -16,7 +16,6 @@
   font-style: italic;
   background: var(--main-color);
   color: var(--accent-color);
-  max-width: 1000px;
   margin: 0;
   padding: 0;
 }
