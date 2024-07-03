@@ -112,7 +112,7 @@
     align-items: center;
   }
   .got-box {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +140,7 @@
     height: 25%;
   }
   .got-racers, .got-crew{
-    width: 50%; 
+    width: 80%; 
   }
   .got-title{
     font-size: 1.5rem;
