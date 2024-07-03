@@ -12,7 +12,7 @@
 
 .racers-page {
   font-family: var(--main-font);
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-style: italic;
   background: var(--main-color);
   color: var(--accent-color);
@@ -30,6 +30,12 @@
 .content-container {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {  
+  .content-container {
+    flex-direction: column;
+  }
   
 }
 
