@@ -11,10 +11,10 @@ const Nav = () => {
   return (
     <nav id="top-nav">
       <div class="nav-item">
-        <a href="#" onClick={() => handlePageChange(RacersPage)}>Racers</a></div>
+        <a href="#" onClick={() => handlePageChange('RacersPage')}>Racers</a></div>
       <div class="nav-item">Crew</div>
       <div class="nav-item">
-        <a href="#" onClick={() => handlePageChange(ProfilePage)}>Profile</a></div>
+        <a href="#" onClick={() => handlePageChange('ProfilePage')}>Profile</a></div>
       <div class="nav-item">Test</div>
     </nav>
   );
