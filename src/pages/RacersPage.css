@@ -55,7 +55,9 @@
   .selection-container {
     margin-bottom: 20px;
     display: flex;
-    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    height: 25%;
   }
 
   .got-racers, .got-crew{
