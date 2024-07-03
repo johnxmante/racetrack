@@ -113,6 +113,9 @@
   }
   .got-box {
     width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   .racers-title {
@@ -126,14 +129,14 @@
 
   }
   .selection-dropdown {
-    width: 100%;
+    width: 80%;
   }
   .selection-container {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 80%;
     height: 25%;
   }
   .got-racers, .got-crew{
