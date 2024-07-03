@@ -8,8 +8,9 @@ function ProfilePage() {
   return (
     <div>
       <Nav />
-      <h1>Profile Page</h1>
-      {/* Form and inputs will go here */}
+      <h1>Your Profile</h1>
+      {/* Form and inputs will go here, and username will replace Your Profile */}
+      
     </div>
   );
 }

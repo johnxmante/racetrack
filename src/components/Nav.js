@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Nav.css';
 
 const Nav = () => {
@@ -10,12 +11,14 @@ const Nav = () => {
 
   return (
     <nav id="top-nav">
-      <div class="nav-item">
-        <a href="#" onClick={() => handlePageChange('RacersPage')}>Racers</a></div>
-      <div class="nav-item">Crew</div>
-      <div class="nav-item">
-        <a href="#" onClick={() => handlePageChange('ProfilePage')}>Profile</a></div>
-      <div class="nav-item">Test</div>
+      <div className="nav-item">
+        <NavLink to ="/RacersPage" activeClassName="active" onClick={() => handlePageChange('RacersPage')}>Racers</NavLink>
+      </div>
+      <div className="nav-item">Crew</div>
+      <div className="nav-item">
+        <NavLink to ="/ProfilePage" activeClassName="active" onClick={() => handlePageChange('ProfilePage')}>Profile</NavLink>  
+      </div>
+      <div className="nav-item">Test</div>
     </nav>
   );
 };
