@@ -10,6 +10,7 @@ const Nav = () => {
   };
 
   return (
+    "the nav should be here",
     <nav id="top-nav">
       <div className="nav-item">
         <NavLink to ="/RacersPage" activeClassName="active" onClick={() => handlePageChange('RacersPage')}>Racers</NavLink>

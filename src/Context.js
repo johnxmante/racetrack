@@ -17,6 +17,7 @@ export const MyProvider = ({ children }) => {
     };
 
     return (
+        console.log('MyProvider is running'),
         <MyContext.Provider value= {{racers, crew, addRacer, addCrew}}>
             {children}
         </MyContext.Provider>
