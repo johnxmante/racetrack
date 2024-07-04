@@ -9,6 +9,7 @@ if (container !== null) {
   const root = createRoot(container);
   root.render(
     <React.StrictMode>
+      "hello world"
       <App />
     </React.StrictMode>
   )
