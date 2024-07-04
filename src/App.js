@@ -7,6 +7,7 @@ import RacersPage from './pages/RacersPage';
 
 
 function App() {
+  console.log('App is running');
   return(
     <MyProvider>
       <BrowserRouter>
