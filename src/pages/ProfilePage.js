@@ -1,18 +1,29 @@
-// src/pages/ProfilePage.js
-
 import React from 'react';
 import Nav from '../components/Nav';
 import './ProfilePage.css';
+import { useMyContext } from '../Context';
 
 function ProfilePage() {
-  return (
-    <div>
-      <Nav />
-      <h1>Your Profile</h1>
-      {/* Form and inputs will go here, and username will replace Your Profile */}
-      
-    </div>
-  );
+    const { racers, crew } = useMyContext();
+
+    return (
+        <div>
+            <Nav />
+            <h1>Profile Page</h1>
+            <h2>Racers</h2>
+            <ul>
+                {racers.map((racer, index) => (
+                    <li key={index}>{racer.name}</li>
+                ))}
+            </ul>
+            <h2>Crew</h2>
+            <ul>
+                {crew.map((crew, index) => (
+                    <li key={index}>{crew.name}</li>
+                ))}
+            </ul>
+        </div>
+    );
 }
 
 export default ProfilePage;

@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import './RacersPage.css';
 import Nav from '../components/Nav';
+import { useMyContext } from '../Context';
 
 const RacersPage = () => {
-  const [racers, setRacers] = useState([]);
-  const [crew, setCrew] = useState([]);
   const [gotList, setGotList] = useState([]);
   const [selectedRacer, setSelectedRacer] = useState('');
   const [selectedCrew, setSelectedCrew] = useState('');
+
+  const { addRacer, addCrew } = useMyContext();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -60,12 +61,14 @@ const RacersPage = () => {
   }, []);
 
   const handleAddToGotList = (type) => {
+    const { addRacer, addCrew } = useMyContext();
     const selectedItem = type === 'Racer' ? selectedRacer : selectedCrew;
     if (selectedItem && !gotList.some(item => item.name === selectedItem)) {
-      setGotList(prevList => [...prevList, { name: selectedItem, type }]);
       if (type === 'Racer') {
+        addRacer({ name: selectedItem, type});
         setSelectedRacer('');
       } else {
+        addCrew({ name: selectedItem, type });
         setSelectedCrew('');
       }
     }
