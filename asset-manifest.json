@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/racetrack/static/css/main.33c98b02.css",
-    "main.js": "/racetrack/static/js/main.27fb7822.js",
+    "main.js": "/racetrack/static/js/main.70348b5c.js",
     "static/js/453.68539ab5.chunk.js": "/racetrack/static/js/453.68539ab5.chunk.js",
     "index.html": "/racetrack/index.html",
     "main.33c98b02.css.map": "/racetrack/static/css/main.33c98b02.css.map",
-    "main.27fb7822.js.map": "/racetrack/static/js/main.27fb7822.js.map",
+    "main.70348b5c.js.map": "/racetrack/static/js/main.70348b5c.js.map",
     "453.68539ab5.chunk.js.map": "/racetrack/static/js/453.68539ab5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33c98b02.css",
-    "static/js/main.27fb7822.js"
+    "static/js/main.70348b5c.js"
   ]
 }
