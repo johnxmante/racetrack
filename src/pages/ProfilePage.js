@@ -3,8 +3,9 @@ import Nav from '../components/Nav';
 import './ProfilePage.css';
 import { useMyContext } from '../Context';
 
+const { racers, crew } = useMyContext();
 function ProfilePage() {
-    const { racers, crew } = useMyContext();
+    
 
     return (
         <div>
