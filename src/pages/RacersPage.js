@@ -61,7 +61,6 @@ const RacersPage = () => {
   }, []);
 
   const handleAddToGotList = (type) => {
-    const { addRacer, addCrew } = useMyContext();
     const selectedItem = type === 'Racer' ? selectedRacer : selectedCrew;
     if (selectedItem && !gotList.some(item => item.name === selectedItem)) {
       if (type === 'Racer') {
