@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Nav.css';
 
+
 const Nav = () => {
   const [activePage, setActivePage] = React.useState('RacersPage');
 
@@ -10,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    "the nav should be here",
+    console.log('Nav is running'),
     <nav id="top-nav">
       <div className="nav-item">
         <NavLink to ="/RacersPage" activeClassName="active" onClick={() => handlePageChange('RacersPage')}>Racers</NavLink>
