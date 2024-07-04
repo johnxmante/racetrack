@@ -46,7 +46,9 @@ const RacersPage = () => {
               .map(item => ({ name: item[nameColumn], type: 'Crew' }));
             
             addRacer(parsedRacers);
+            console.log(parsedRacers);
             addCrew(parsedCrew);
+            console.log(parsedCrew);
           },
           error: (error) => {
             console.error('Error parsing CSV:', error);
@@ -85,8 +87,8 @@ const RacersPage = () => {
               className="selection-dropdown"
             >
               <option value="">Select a Racer</option>
-              {racers.map((racer) => (
-                <option key={racer} value={racer}>{racer.name}</option>
+              {racers.map((racer, index) => (
+                <option key={index} value={racer.name}>{racer.name}</option>
               ))}
             </select>
             <button 
@@ -104,8 +106,8 @@ const RacersPage = () => {
               className="selection-dropdown"
             >
               <option value="">Select a Crew Member</option>
-              {crew.map((crewMember) => (
-                <option key={crewMember} value={crewMember}>{crewMember.name}</option>
+              {crew.map((crewMember, index) => (
+                <option key={index} value={crewMember.name}>{crewMember.name}</option>
               ))}
             </select>
             <button 
