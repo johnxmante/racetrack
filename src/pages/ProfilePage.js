@@ -8,7 +8,6 @@ function ProfilePage() {
 
     return (
         <div>
-            <Nav />
             <h1>Profile Page</h1>
             <h2>Racers</h2>
             <ul>
