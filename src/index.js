@@ -3,15 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { MyProvider } from './Context';
+import Nav from './components/Nav';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+ReactDOM.render(
   <React.StrictMode>
-    <MyProvider> 
-      <App />
-    </MyProvider>
-  </React.StrictMode>
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route path="/RacersPage" element={<RacersPage />} />
+        <Route path="/ProfilePage" element={<ProfilePage />} />
+        <Route path="/" element={<App />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
