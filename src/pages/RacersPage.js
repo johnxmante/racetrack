@@ -75,7 +75,6 @@ const RacersPage = () => {
 
   return (
     <div className="racers-page">
-      <Nav /> 
       <h1 className="racers-title">Speedstorm Racers & Crew</h1>
       <div className="content-container">
         <div className="selections">
