@@ -3,6 +3,8 @@ import { MyProvider } from './Context';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProfilePage from './pages/ProfilePage';
 import RacersPage from './pages/RacersPage';
+import Nav from './components/Nav';
+import Nav from './components/Nav.css';
 
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
   return(
     <MyProvider>
       <BrowserRouter>
+        <Nav />
         <Routes>
           <Route path="/RacersPage" element={<RacersPage />} />
           <Route path="/ProfilePage" element={<ProfilePage />} />
