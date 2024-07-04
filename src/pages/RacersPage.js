@@ -9,7 +9,7 @@ const RacersPage = () => {
   const [selectedRacer, setSelectedRacer] = useState('');
   const [selectedCrew, setSelectedCrew] = useState('');
 
-  const { addRacer, addCrew } = useMyContext();
+  const { racers, crew, addRacer, addCrew } = useMyContext();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -87,7 +87,7 @@ const RacersPage = () => {
               className="selection-dropdown"
             >
               <option value="">Select a Racer</option>
-              {currentRacers.map((racer, index) => (
+              {racers.map((racer, index) => (
                 <option key={index} value={racer.name}>{racer.name}</option>
               ))}
             </select>
@@ -106,7 +106,7 @@ const RacersPage = () => {
               className="selection-dropdown"
             >
               <option value="">Select a Crew Member</option>
-              {currentCrew.map((crewMember, index) => (
+              {crew.map((crewMember, index) => (
                 <option key={index} value={crewMember.name}>{crewMember.name}</option>
               ))}
             </select>
