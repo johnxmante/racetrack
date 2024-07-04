@@ -1,7 +1,7 @@
 import React from 'react';
 import { MyProvider } from './Context';
 import RaceTrackApp from './components/RaceTrackApp';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
 
 function App() {
   return (

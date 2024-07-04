@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Nav from './components/Nav';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import RacersPage from './pages/RacersPage';
+import ProfilePage from './pages/ProfilePage';
 
 
 ReactDOM.render(
