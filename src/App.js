@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProfilePage from './pages/ProfilePage';
 import RacersPage from './pages/RacersPage';
 import Nav from './components/Nav';
-import Nav from './components/Nav.css';
 
 
 function App() {
