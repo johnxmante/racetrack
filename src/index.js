@@ -3,22 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Nav from './components/Nav';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import RacersPage from './pages/RacersPage';
-import ProfilePage from './pages/ProfilePage';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Nav />
-      <Routes>
-        <Route path="/RacersPage" element={<RacersPage />} />
-        <Route path="/ProfilePage" element={<ProfilePage />} />
-        <Route path="/" element={<App />} />
-      </Routes>
-    </BrowserRouter>
+    <App/ >
   </React.StrictMode>,
   document.getElementById('root')
 );
