@@ -87,7 +87,7 @@ const RacersPage = () => {
               className="selection-dropdown"
             >
               <option value="">Select a Racer</option>
-              {racers.map((racer, index) => (
+              {currentRacers.map((racer, index) => (
                 <option key={index} value={racer.name}>{racer.name}</option>
               ))}
             </select>
@@ -106,7 +106,7 @@ const RacersPage = () => {
               className="selection-dropdown"
             >
               <option value="">Select a Crew Member</option>
-              {crew.map((crewMember, index) => (
+              {currentCrew.map((crewMember, index) => (
                 <option key={index} value={crewMember.name}>{crewMember.name}</option>
               ))}
             </select>
