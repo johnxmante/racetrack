@@ -46,8 +46,8 @@ const RacersPage = () => {
               .filter(item => item[typeColumn] === 'C')
               .map(item => ({ name: item[nameColumn], type: 'Crew' }));
             
-            setRacers(parsedRacers);
-            setCrew(parsedCrew);
+            addRacer(parsedRacers);
+            addCrew(parsedCrew);
           },
           error: (error) => {
             console.error('Error parsing CSV:', error);
