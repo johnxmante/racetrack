@@ -9,11 +9,11 @@ export const MyProvider = ({ children }) => {
     const [crew, setCrew] = useState([]);
 
     const addRacer = (racer) => {
-        setRacers(currentRacers => [...currentRacers, racer]);
+        setRacers(currentRacers => [...currentRacers, { ...racer, added: true}]);
     };
 
     const addCrew = (crew) => {
-        setCrew(currentCrew => [...currentCrew, crew]);
+        setCrew(currentCrew => [...currentCrew, {...crew, added: true}]);
     };
 
     return (

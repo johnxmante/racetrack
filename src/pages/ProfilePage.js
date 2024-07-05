@@ -5,19 +5,22 @@ import { useMyContext } from '../Context';
 
 function ProfilePage() {
     const { racers, crew } = useMyContext();
+    
+    const addedRacers = racers.filter(racer => racer.added);
+    const addedCrew = crew.filter(crew => crew.added);
 
     return (
         <div>
             <h1>Profile Page</h1>
             <h2>Racers</h2>
             <ul>
-                {racers.map((racer, index) => (
+                {addedRacers.map((racer, index) => (
                     <li key={index}>{racer.name}</li>
                 ))}
             </ul>
             <h2>Crew</h2>
             <ul>
-                {crew.map((crew, index) => (
+                {addedCrew.map((crew, index) => (
                     <li key={index}>{crew.name}</li>
                 ))}
             </ul>
