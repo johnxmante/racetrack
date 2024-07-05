@@ -5,12 +5,15 @@ import { useMyContext } from '../Context';
 
 function ProfilePage() {
     const { racers, crew } = useMyContext();
-
-    console.log('Racers:', racers);
-    console.log('Crew:', crew);
-    
     const addedRacers = racers.filter(racer => racer.added);
     const addedCrew = crew.filter(crew => crew.added);
+    
+    console.log('Racers:', racers);
+    console.log('Added Racers:', addedRacers);
+    console.log('Crew:', crew);
+    console.log('Added Crew:', addedCrew);
+    
+   
 
     return (
         <div>
