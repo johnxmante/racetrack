@@ -45,11 +45,8 @@ const RacersPage = () => {
               .filter(item => item[typeColumn] === 'C')
               .map(item => ({ name: item[nameColumn], type: 'Crew' }));
 
-            parsedRacers.forEach(racer => {
-              addRacer(racer);
-              console.log(racer.name);
-            });
-            parsedCrew.foreEach(crewMember => addCrew(crewMember));
+            parsedRacers.forEach(racer => addRacer(racer));
+            parsedCrew.forEach(crewMember => addCrew(crewMember));
             
           },
           error: (error) => {
