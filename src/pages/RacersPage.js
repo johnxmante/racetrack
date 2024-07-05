@@ -44,11 +44,13 @@ const RacersPage = () => {
             const parsedCrew = results.data
               .filter(item => item[typeColumn] === 'C')
               .map(item => ({ name: item[nameColumn], type: 'Crew' }));
+
+            parsedRacers.forEach(racer => {
+              addRacer(racer);
+              console.log(racer.name);
+            });
+            parsedCrew.foreEach(crewMember => addCrew(crewMember));
             
-            addRacer(parsedRacers);
-            console.log(parsedRacers);
-            addCrew(parsedCrew);
-            console.log(parsedCrew);
           },
           error: (error) => {
             console.error('Error parsing CSV:', error);
